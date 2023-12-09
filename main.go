@@ -19,7 +19,7 @@ func getNextValue(values []int) int {
 	if allZeroes {
 		return 0
 	}
-	return values[len(values)-1] + getNextValue(diffs)
+	return values[0] - getNextValue(diffs)
 }
 
 func convertList(list []string) []int {
